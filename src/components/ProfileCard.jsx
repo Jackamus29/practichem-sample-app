@@ -10,7 +10,10 @@ class ProfileCard extends React.Component {
 
   render() {
     return (
-      <div className={this.props.profileData.name ? 'container' : 'hidden'}>
+      <div
+        className={this.props.profileData.name ? 'container well' : 'hidden'}
+        style={{ width: '100%' }}
+      >
         <img
           style={{ width: '200px', height: '200px' }}
           src={this.props.profileData.photos ? this.props.profileData.photos[0].value : ''}

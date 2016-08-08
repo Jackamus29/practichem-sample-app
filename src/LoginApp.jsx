@@ -90,9 +90,7 @@ class LoginApp extends React.Component {
             label={this.state.submitButtonText}
           />
         </div>
-        <div className="well">
-          <ProfileCard profileData={this.state.profileData} />
-        </div>
+        <ProfileCard profileData={this.state.profileData} />
       </div>
     );
   }
